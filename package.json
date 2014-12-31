@@ -15,6 +15,7 @@
     "github-commits": "0.0.10",
     "lodash": "^2.4.1",
     "redis": "^0.12.1",
+    "redis-url": "^0.3.1",
     "restify": "^2.8.4",
     "restify-cookies": "^0.1.1",
     "simple-oauth2": "^0.2.1",
