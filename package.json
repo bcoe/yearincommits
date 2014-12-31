@@ -1,7 +1,7 @@
 {
   "name": "yearincommits",
   "version": "1.0.0",
-  "description": "2014 GitHub commits leader board",
+  "description": "GitHub 2014 commits leaderboard",
   "main": "index.js",
   "scripts": {
     "start": "node ./server.js"
