@@ -1,12 +1,15 @@
 {
   "name": "yearincommits",
   "version": "1.0.0",
-  "description": "The year in GitHub commits.",
+  "description": "2014 GitHub commits leader board",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./server.js"
   },
-  "author": "",
+  "repository": {
+    "url": ""
+  },
+  "author": "Ben Coe <ben@npmjs.com",
   "license": "ISC",
   "dependencies": {
     "async": "^0.9.0",
