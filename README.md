@@ -1,6 +1,6 @@
 # The Year in Commits
 
-GitHub 2014 commits leaderboard
+GitHub 2014 commits [leaderboard](http://yearincommits.herokuapp.com/)
 
 ## What is The Year In Commits?
 

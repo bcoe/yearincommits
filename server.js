@@ -158,7 +158,8 @@ Server.prototype.stats = function(req, res, next) {
         });
       }, function() {
         stats.sort(function(a, b) {
-          return a.commits < b.commits;
+          if (a.commits < b.commits) return 1;
+          else return -1;
         });
         res.send(200, stats);
       })
