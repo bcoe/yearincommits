@@ -152,7 +152,7 @@ Server.prototype.stats = function(req, res, next) {
         _this.redis.get(key, function(err, count) {
           stats.push({
             name: key,
-            commits: parseInt(count)
+            commits: isNaN(parseInt(count)) ? 0 : parseInt(count)
           })
           return done();
         });
