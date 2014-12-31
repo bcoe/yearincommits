@@ -1,0 +1,32 @@
+<html>
+  <header>
+    <title>The Year in Commits</title>
+    <script type="text/javascript" src="/javascript/jquery.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $.get('/stats', function(users) {
+          users.forEach(function(user) {
+            $('#leader-board').append(
+              $('<tr><td>' + user.name + '</td><td>' + user.commits + '</td></tr>')
+            )
+          });
+        });
+      });
+    </script>
+  </header>
+  <body>
+    <h1>The Year In Commits</h1>
+    <h2>GitHub 2014 Commits Leader Board</h2>
+    <table id="leader-board">
+      <tr>
+        <th>User</th>
+        <th>Commits</th>
+      </tr>
+    </table>
+  </body>
+
+  <a href="/auth">Login with your GitHub Account, to Compete</a>
+  <div id="disclaimer">
+    <i>* No password is required, uses OAuth2. The tokens are not stored.</i>
+  </div>
+</html>
